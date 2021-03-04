@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+
+
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+    	<div class="glossymenu" >
+		<a class="menuitem" href="">Home</a>
+		<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+		<div class="submenu">
+			<ul>
+			<li><a href="relax.html">Relaxation Training</a></li>
+			<li><a href="sleep.html">Sleep Well</a></li>
+			<li><a href="stress.html">Stress</a></li>
+			<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+			<div class="submenu">
+				<ul>
+					<li><a href="discipline.html">Discipline</a></li>
+					<li><a href="negative.html">Negative Peer Pressure</a></li>
+					<li><a href="sibling.html">Sibling Rivalry</a></li>
+					<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+					<li><a href="watchtv.html">Watching TV</a></li>
+					<li><a href="cttg.html">Children Touching their Genitals</a></li>
+				</ul>
+			</div></div>
+			</ul>
+		</div>
+		<a class="menuitem submenuheader" href="#">Illness</a>
+		<div class="submenu">
+			<ul>
+			<li><a href="addiction.html">Addiction</a></li>
+			<li><a href="adhd.html">ADHD</a></li>
+			<li><a href="bipolar.html">Bipolar Disorder</a></li>
+			<li><a href="depression.html">Depression</a></li>
+			<li><a href="ocd.html">OCD</a></li>
+			<li><a href="faq.html">Psychiatry FAQ's</a></li>
+			<li><a href="schizophrenia.html">Schizophrenia</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+		</div>
+
+	</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/addiction.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td>
+			<p class="text">Addiction (chemical dependency, substance abuse) is a complex but treatable brain disease. It is characterized by compulsive drug craving, seeking and use that persist even in the face of severe adverse consequences. For many people, drug addiction becomes chronic, with relapses possible even after long periods of abstinence. In fact, relapse to substance abuse occurs at rates similar to those for other well-characterized, chronic medical illnesses such as diabetes, hypertension and asthma. As a chronic, recurring illness, addiction may require repeated treatments to increase the intervals between relapses and diminish their intensity, until abstinence is achieved. Through treatment tailored to individual needs, people with drug addiction can recover and lead productive lives. The ultimate goal of drug addiction treatment is to enable an individual to achieve lasting abstinence, but the immediate goals are to reduce drug abuse, improve the patient�s ability to function and minimize the medical and social complications of drug abuse. Like people with diabetes or heart disease, <b>people in treatment for drug addiction will need to change behavior to adopt a healthier lifestyle.</b></p>
+			<p class="text">Substances to which people get addicted are numerous, but the most common ones in the Indian setting are
+							<ol class="text">
+								<li>Alcohol
+								<li>Cannabis (ganja, pot, grass)
+								<li>Opium (heroin, brown sugar, smack)
+								<li>Tobacco (cigarettes, gutkha etc.)
+								<li>Inhalants (petrol, glue etc.)
+							</ol>
+			</p>
+			<p class="text"><strong>When is someone chemical-dependent?</strong><br><br>The American Psychiatric Association says that a person is dependent if their pattern of substance use leads to clinically significant impairment or distress shown by three or more of the following in a 12-month period:
+				<ol class="text">
+					<li>Tolerance, as defined by</li>
+					<ul>
+						<li>a need for markedly increased amounts of the substance to achieve intoxication or desired effect</li>
+						<li>markedly diminished effect with continued use of the same amount of the substance</li>
+					</ul>
+					<li>Withdrawal, as manifested by</li>
+					<ul>
+						<li>the characteristic withdrawal symptom of the substance</li>
+						<li>the same or a closely related substance is taken to relieve or avoid withdrawal symptoms</li>
+					</ul>
+					<li>The substance is often taken in larger amounts or over a longer period than was intended (loss of control)</li>
+					<li>There is a persistent desire or unsuccessful efforts to cut down or control substance use</li>
+					<li>A great deal of time is spent in activities necessary to obtain the substance, use the substance or recover from its effects (preoccupation)</li>
+					<li>Important social, occupational or recreational activities are given up or reduced because of substance use</li>
+					<li>The substance use is continued despite knowledge of having a persistent or recurrent physical or psychological problem that is likely to have been caused or exacerbated by the substance (continuation despite adverse consequences)</li>
+				</ol>
+			</p>
+			<p class="text"><strong>Why do some people become addicted?</strong><br><br>For two decades, researchers have been struggling to identify the biological and environmental risk factors that can lead to addiction to alcohol and other drugs. These factors form a complex m�lange in which the influences combine to bring about addiction and to make its treatment challenging. But scientists know more about addiction now than they did even 10 years ago, and have learned much about how the risk factors work together.<br><br>The widely recognized risk factors include:
+					<ul class="text">
+						<li><strong>Genes.</strong> Genetics plays a significant role - having parents with alcoholism, for instance, makes a person four times more likely than others to become an alcoholic. More than 60 percent of alcoholics have family histories of alcoholism. </li>
+						<li><strong>Mental illness.</strong> Many addicted people also suffer from mental health disorders, especially anxiety, depression or psychosis. </li>
+						<li><strong>Early use of drugs.</strong> The earlier a person begins to use drugs, the more likely they are to progress to more serious abuse. </li>
+						<li><strong>Social environment.</strong> People who live, work or go to school in an environment in which the use of alcohol and other drugs is common - such as a workplace in which people see heavy drinking as an important way to bond with coworkers - are more likely to abuse drugs. </li>
+						<li><strong>Childhood trauma.</strong> Scientists know that abuse or neglect of children, persistent conflict in the family, sexual abuse and other traumatic childhood experiences can shape a child's brain chemistry and subsequent vulnerability to addiction. </li>
+					</ul>
+			</p>
+			<p class="text"><strong>Recognizing the illness� </strong><br><br>Friends and family may be among the first to recognize the signs of substance abuse. Early recognition increases chances for successful treatment. Signs to watch for include the following:
+					<ul class="text" type="square">
+						<li>Getting drunk or high on drugs on a regular basis</li>
+						<li>Lying, particularly about how much alcohol or other drugs he is using </li>
+						<li>Avoiding friends or family in order to get drunk or high </li>
+						<li>Planning drinking in advance, hiding alcohol, �stocking up� on alcohol </li>
+						<li>Drinking or doing drugs alone </li>
+						<li>Having to drink more to get the same high </li>
+						<li>Believing that in order to have fun you need to drink or use other drugs </li>
+						<li>Frequent hangovers</li>
+						<li>Giving up / losing interest in routine activities such as work, studies or sports</li>
+						<li>Hanging out with new friends </li>
+						<li>Aggressiveness and irritability </li>
+						<li>Disappearing money or valuables </li>
+						<li>Sounding selfish and not caring about others </li>
+						<li>Use of room deodorizers and incense </li>
+						<li>Having "blackouts" - forgetting what he did the night before </li>
+						<li>Getting in trouble with the law </li>
+						<li>Suspension from school/college or work for an alcohol- or drug-related incident </li>
+						<li>Unexplained injection sites</li>
+						<li>Tremors (�shakes�) / seizures (�fits�) </li>
+					</ul>
+			</p>
+			<p class="text"><strong>Principles of effective treatment</strong><br><br>Scientific research since the mid-1970s shows that treatment can help many people change destructive behaviors, avoid relapse and successfully remove themselves from a life of substance abuse and addiction. Recovery from drug addiction is a long-term process and frequently requires multiple episodes of treatment. Based on this research, key principles have been identified that should form the basis of any effective treatment program:
+					<ul class="text" type="square">
+						<li>No single treatment is appropriate for all individuals.</li>
+						<li>Effective treatment attends to multiple needs of the individual, not just his or her drug addiction. </li>
+						<li>An individual�s treatment and services plan must be assessed often and modified to meet the person�s changing needs.</li>
+						<li>Remaining in treatment for an adequate period of time is critical for treatment effectiveness.</li>
+						<li>Medication, counseling and other behavioral therapies are critical components of virtually all effective treatments for addiction. </li>
+						<li>Chemical-dependent individuals with coexisting mental disorders should have both disorders treated in an integrated way.</li>
+						<li>Medical management of the withdrawal syndrome (�detox�) is only the first stage of addiction treatment and by itself does little to change long-term drug use.</li>
+						<li>Treatment does not need to be voluntary to be effective.</li>
+						<li>As is the case with other chronic, relapsing diseases, recovery from drug addiction can be a long-term process and typically requires multiple episodes of treatment, including �booster� sessions and other forms of continuing care.</li>
+					</ul>
+			</p>
+			<p class="text"><strong>Treating the illness�</strong><br><br><strong>No available therapy, program, medication or surgical procedure can remove the recurrent desire or craving for alcohol and/or other drugs</strong>. Eliminating the desire to use drugs or alcohol is not a goal of treatment. A more reasonable expectation is that medication may reduce this urge and effective rehabilitation will teach a person what they must do to manage and contain their recurrent desires to use, much in the same way as a person with diabetes or hypertension must learn to manage their lives to control their illness. </p>
+			<p class="text">It is best to think of three stages of addiction treatment, each with a different function in the larger picture of care:
+					<ul class="text" type="square">
+						<li>Detoxification / stabilization </li>
+						<li>Rehabilitation</li>
+						<li>Continuing care </li>
+					</ul>
+			</p>
+			<p class="text"><u><i>Detoxification / stabilization</i></u><br><br>Detoxification is not treatment � it is merely preparation for treatment, and must be followed by rehab and after-care for lasting improvement. Following cessation of heavy and sustained alcohol or drug use, most individuals develop significant physical and emotional symptoms (the withdrawal syndrome). Detox is the medical management of these symptoms. It is almost always undertaken in an in-patient setting, in a hospital / deaddiction centre. It usually lasts for between one and two weeks, though, for severely dependent individuals, it can last much longer. Desired results include reduced physical and emotional instability caused by substance use and a patient who is motivated to recognize and accept that there is a problem that he needs to � and can - address.  </p>
+			<p class="text"><u><i>Rehabilitation</i></u><br><br>Rehabilitation is appropriate for patients who are no longer suffering from the acute physical or emotional effects of recent substance use. It typically offers an array of treatment components to help to address the many health and social problems associated with substance use. Most rehabilitative care for addiction occurs in specialty "programs" that include
+					<ol class="text">
+						<li>Medical management of craving</li>
+						<li>Individual, group and family therapy</li>
+						<li>Relapse prevention training</li>
+						<li>Developing a plan for a drug-free lifestyle</li>
+						<li>Familiarization with mutual-help groups (AA/NA)</li>
+					</ol>
+			</p>
+			<p class="text"><u><i>Continuing Care</i></u><br><br>The first 3-6 months following discharge from hospital is the period of greatest vulnerability to relapse. Consequently, continuing care services are designed to monitor the emotional health of recovering people, remind them of their commitment to lifestyle change and support their needs as they attempt the difficult job of living their former lives with a new perspective and resolve.</p>
+			<p class="text">If the patient is on aversive medication, the family is encouraged to take responsibility for its administration. Individual, group and family therapy sessions continue, but typically occur less frequently than during the residential program. Some rehabilitation programs offer telephone counseling and support services for people to talk with their former counselors. The recovering addict is encouraged to continue association with mutual-help groups. </p>
+			<p class="text"><strong>Relapse</strong><br><br>To ordinary people, relapse is one of the most perplexing aspects of addiction. People recovering from addiction can experience a lack of control and return to their substance use at some point in their recovery process. This faltering, common among people with most chronic disorders, is called relapse. Relapse, when defined as return to excessive or problematic use, occurs in approximately 20-30% of those who have completed formal care in the previous 12 months. When defined as re-use of alcohol or drugs even in minimal quantities, relapse rates can be as high as 50%. </p>
+			<p class="text">The road to recovery is usually long and hard. Few people with chemical dependency travel it gracefully. There are many slips, trips and lapses. Those who eventually do recover, learn to pick themselves up when they fall, brush off the dust and keep going. By doing so, they keep temporary lapses from turning into full-blown relapses. </p>
+		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

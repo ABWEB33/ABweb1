@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+            	<div class="glossymenu" >
+				<a class="menuitem" href="">Home</a>
+				<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+				<div class="submenu">
+					<ul>
+					<li><a href="relax.html">Relaxation Training</a></li>
+					<li><a href="sleep.html">Sleep Well</a></li>
+					<li><a href="stress.html">Stress</a></li>
+					<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+					<div class="submenu">
+						<ul>
+							<li><a href="discipline.html">Discipline</a></li>
+							<li><a href="negative.html">Negative Peer Pressure</a></li>
+							<li><a href="sibling.html">Sibling Rivalry</a></li>
+							<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+							<li><a href="watchtv.html">Watching TV</a></li>
+							<li><a href="cttg.html">Children Touching their Genitals</a></li>
+						</ul>
+					</div></div>
+					</ul>
+				</div>
+				<a class="menuitem submenuheader" href="#">Illness</a>
+				<div class="submenu">
+					<ul>
+					<li><a href="addiction.html">Addiction</a></li>
+					<li><a href="adhd.html">ADHD</a></li>
+					<li><a href="bipolar.html">Bipolar Disorder</a></li>
+					<li><a href="depression.html">Depression</a></li>
+					<li><a href="ocd.html">OCD</a></li>
+					<li><a href="faq.html">Psychiatry FAQ's</a></li>
+					<li><a href="schizophrenia.html">Schizophrenia</a></li>
+					</ul>
+				</div>
+				<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+				</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/ocd.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td><p class="text">Worries, doubts and superstitious beliefs are part of everyday life. However, when they become so excessive - such as hours of hand washing, or make no sense at all - such as driving round and round the locality to check that an accident hasn't occurred, an illness called Obsessive-Compulsive Disorder (OCD) is the likely cause. In OCD, it is as though the brain gets stuck on a particular thought or urge, and just can't let go. People with OCD often say the symptoms feel like a case of mental hiccups that won't go away. </p>
+			<p class="text"><strong>What are obsessions?</strong><br><strong>Obsessions are thoughts</strong>, images, or impulses that occur over and over again, and are beyond the person�s control. The person finds these ideas disturbing and intrusive, and does not want to have these thoughts � he/she tries to resist them, push them out of his/her mind. They usually recognize that these ideas don't really make sense - that they are absurd, irrational. People with OCD may worry excessively about dirt and germs, and be obsessed with the idea that they are contaminated or may contaminate others. Or they may have obsessive fears of having inadvertently harmed someone else (perhaps while pulling the car out of the driveway), even though they usually know this is not realistic. Obsessions are accompanied by uncomfortable feelings, such as fear, disgust, doubt, or a sensation that things have to be done in a way that is "just so". </p>
+			<p class="text"><strong>Some common Obsessions:</strong>
+				<ul class="text">
+				<li>Fear of dirt/germs</li>
+				<li>Imagining having harmed self or others </li>
+				<li>Imagining losing control or aggressive urges</li>
+				<li>Intrusive sexual thoughts or urges</li>
+				<li>Excessive religious or moral doubt</li>
+				<li>Forbidden / blasphemous thoughts</li>
+				<li>A need to have things "just so"</li>
+				<li>A need to tell/ask/confess</li>
+				<li>A need for constant reassurance</li>
+				</ul>
+			</p>
+			<p class="text"><strong>What are Compulsions? </strong><br>People with OCD typically try to make their obsessions go away by performing compulsions. <strong>Compulsions are acts</strong> the person performs over and over again, often according to certain "rules." People with an obsession about contamination may wash constantly - to the point that their hands become raw and inflamed. A person may repeatedly check that she has turned off the stove or iron, because of an obsessive fear of burning the house down. She may have to count certain objects over and over, because of an obsession about losing them. Unlike compulsive drinking or gambling, OCD compulsions do not give the person pleasure. Rather, the rituals are performed to obtain relief from the discomfort caused by the obsessions.  </p>
+			<p class="text">Though compulsions usually take the form of acts, they can also take the form of thoughts, when such �good� thoughts make the distressing obsessions (the �bad� thoughts) go away.  Such cognitive compulsions, as they are referred to, are �mental� actions, as different from �physical� ones. They include mental counting and compulsive visualization or substitution of mental images or ideas with neutralizing alternatives. A practical example would be a patient who feels compelled to silently repeat a string of words over and over on experiencing a negative or violent thought. The patient who feels compelled to mentally substitute the word �hell� that pops up, either as a thought or mental image, with the word �well� is another example.</p>
+			<p class="text"><strong>Some common Compulsions:</strong>
+				<ul class="text">
+				<li>Cleaning and grooming, such as washing hands, showering or brushing teeth over and over again </li>
+				<li>Checking drawers, door locks and appliances to be sure they are shut, locked or turned off </li>
+				<li>Repeating, such as going in and out of a door, sitting down and getting up from a chair, or touching certain objects several times </li>
+				<li>Ordering and arranging items in certain ways </li>
+				<li>Counting over and over to a certain number</li>
+				<li>Saving newspapers, mail or containers when they are no longer needed </li>
+				</ul>
+			</p>
+			<p class="text"><strong>Obsessions CAUSE distress - Compulsions RELIEVE distress</strong></p>
+			<p class="text">Not all Obsessive-Compulsive behaviors represent an illness. Some rituals (eg. bedtime songs, religious practices) are a welcome part of daily life. Normal worries, such as contamination fears, may increase during times of stress, such as when someone in the family is sick. Only when symptoms persist, make no sense, cause much distress, or interfere with functioning do they need clinical attention. </p>
+			<p class="text"><strong>What causes obsessive-compulsive disorder?</strong><br>There is no single, proven cause of OCD. Research suggests that OCD involves problems in communication between the front part of the brain (the orbital cortex) and deeper structures (the basal ganglia). These brain structures use the chemical messenger serotonin. It is believed that insufficient levels of serotonin are involved in the causation of OCD. </p>
+			<p class="text">Drugs that increase the brain concentration of serotonin often help relieve OCD symptoms. Pictures of the brain at work also show that the brain circuits involved in OCD return toward normal in those who improve after taking a serotonin-enhancing medication. </p>
+			<p class="text">Although it seems clear that reduced levels of serotonin play a role in OCD, there is no laboratory test for OCD. Rather, the diagnosis is made based on an assessment of the person's symptoms. </p>
+			<p class="text">OCD is <strong>not caused</strong> by family problems or attitudes learned in childhood, such as an inordinate emphasis on cleanliness, or a belief that certain thoughts are dangerous or unacceptable.</p>
+			<p class="text"><strong>Treatment</strong><br>Left untreated, obsessive thoughts and compulsive rituals can take over a person's life. Both can be reduced with treatment; the sooner a patient seeks psychiatric help, the better.  </p>
+			<p class="text">The medicines used to treat OCD are called Serotonin Reuptake Inhibitors (SRIs). Which specific SRI is prescribed for a given patient, and in what dose, depends on the symptom profile and severity of the illness. Patients started on medication should be aware that a miracle cure would not happen overnight. It usually takes several weeks for the medicine to have its full effect, though in some cases, patients may experience relief in a couple of weeks.  Most people achieve meaningful and long-term symptom relief with adequate treatment. </p>
+			<p class="text"><strong>For those who suffer from OCD�</strong><br>Just to reassure you that you are not alone: the eminent evolutionist Charles Darwin suffered from OCD, as did Florence Nightingale, the nineteenth century pioneer of nursing and reformer of hospital sanitation methods. Perhaps most famous of all was aviation pioneer and Hollywood film mogul Howard Hughes (played by Leonardo DiCaprio in the Martin Scorsese film <i>The Aviator</i>). More recently, Academy Award-winning writer, actor and director, Billy Bob Thornton (<i>Sling Blade, Armageddon, The Alamo</i>), has candidly discussed his battle with the disorder.</p>
+ 		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

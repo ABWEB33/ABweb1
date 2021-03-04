@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+            	<div class="glossymenu" >
+				<a class="menuitem" href="">Home</a>
+				<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+				<div class="submenu">
+					<ul>
+					<li><a href="relax.html">Relaxation Training</a></li>
+					<li><a href="sleep.html">Sleep Well</a></li>
+					<li><a href="stress.html">Stress</a></li>
+					<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+					<div class="submenu">
+						<ul>
+							<li><a href="discipline.html">Discipline</a></li>
+							<li><a href="negative.html">Negative Peer Pressure</a></li>
+							<li><a href="sibling.html">Sibling Rivalry</a></li>
+							<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+							<li><a href="watchtv.html">Watching TV</a></li>
+							<li><a href="cttg.html">Children Touching their Genitals</a></li>
+						</ul>
+					</div></div>
+					</ul>
+				</div>
+				<a class="menuitem submenuheader" href="#">Illness</a>
+				<div class="submenu">
+					<ul>
+					<li><a href="addiction.html">Addiction</a></li>
+					<li><a href="adhd.html">ADHD</a></li>
+					<li><a href="bipolar.html">Bipolar Disorder</a></li>
+					<li><a href="depression.html">Depression</a></li>
+					<li><a href="ocd.html">OCD</a></li>
+					<li><a href="faq.html">Psychiatry FAQ's</a></li>
+					<li><a href="schizophrenia.html">Schizophrenia</a></li>
+					</ul>
+				</div>
+				<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+				</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/schizophrenia.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td><p class="text"><strong>What schizophrenia is:</strong><br>
+				<ul class="text">
+				<li>Schizophrenia is a <strong>medical illness</strong>, with concrete and specific symptoms caused by changes in the functioning of the brain </li>
+				<li>It is a disease that strikes young people in their prime  </li>
+				<li>Schizophrenia is more common than most people think. It affects 1 in 100 people worldwide � that�s about 10 million (yes, 10 million) Indians </li>
+				<li>The hallmark of schizophrenia is an absence of insight: <strong>the patient does not accept that he/she is ill</strong>. As a result, it is usually the family which seeks psychiatric help for the patient   </li>
+				<li>It is <strong>treatable</strong>. Early diagnosis and stabilization on medicines greatly improve the chance of recovery </li>
+				</ul>
+			</p>
+			<p class="text"><strong>What schizophrenia is not:</strong><br>
+				<ul class="text">
+				<li>Schizophrenia is not "split personality"</li>
+				<li>It is not caused by childhood trauma or bad parenting </li>
+				<li>Most people with schizophrenia are not violent or dangerous</li>
+				</ul>
+			</p>
+			<p class="text"><strong>What causes schizophrenia?</strong><br>Though many factors are involved in the causation of the illness, the fundamental disturbance appears to be one involving changes in the chemistry of the brain.</p>
+			<p class="text">There are billions of nerve cells in the brain. Each nerve cell has branches that transmit and receive messages (signals) from other nerve cells. The branches release chemicals, called neurotransmitters, which carry the messages from one group of nerve cells to another, along specified pathways, called nerve tracts. In the brains of persons with schizophrenia, there is an excess of one such neurotransmitter, <strong>dopamine</strong>, in certain areas of the brain. Because of this, the brain of a person who has schizophrenia receives too many messages along these nerve tracts. These extra signals compete in some way with signals transmitted through other tracts, and result in the production of psychotic symptoms.</p>
+			<p class="text">Many families of persons with schizophrenia have found comparing the brain to a telephone switchboard helpful in understanding the disease. In most people the brain's switching system works well. Incoming perceptions are sent along appropriate pathways, the switching process goes off without a hitch, and appropriate feelings, thoughts, and actions go back out again to the world. In the brains of persons with schizophrenia, perceptions come in but get routed along the wrong path, or get jammed, or end up at the wrong destination. </p>
+			<p class="text"><strong>Recognizing the illness�</strong><br>The number and severity of the symptoms differ from person to person. At first, changes may be subtle, minor or go unnoticed; yet, families sense � even when symptoms are mild � that the patient�s behavior is "unusual", that the person is "not the same". Eventually, such changes become obvious to family and friends. A normally outgoing person may become withdrawn, quiet, or moody. Emotions may be inappropriate - the person may laugh in a sad situation, or cry over a joke - or may be unable to show any emotion at all. They appear absorbed in their own thoughts, and seem to lose interest in the feelings and lives of others.</p>
+			<p class="text"><i>Delusions</i>. Delusions are false personal beliefs that are not part of the person's culture, and which the patient holds on to even when other people present proof that the beliefs are not true or logical. Persons with schizophrenia can believe that others are deliberately cheating, harassing, poisoning, spying upon, or plotting against them or the people they care about. People with schizophrenia can have delusions that are quite bizarre, such as believing that neighbors can control their behavior with magnetic waves, people on television are directing special messages to them, or radio stations are broadcasting their thoughts aloud to others. They may think they are all-powerful, capable of anything, and invulnerable to danger. They may also have a strong religious drive, or believe they have a personal mission to right the wrongs of the world. </p>
+			<p class="text"><i>Hallucinations</i>. A hallucination is something a person sees, hears, tastes, smells, or feels that others cannot. "Voices" are the most common type of hallucination in schizophrenia. Many people with the disorder hear voices that may comment on their behavior or talk to each other (usually about the patient). Sometimes the voices are threatening or condemning; they may also give direct orders such as, "kill yourself". <strong>There is always a danger that such commands will be obeyed</strong>. Other types of hallucinations include seeing people or objects that are not there, smelling odors that no one else detects, or feeling things like invisible fingers touching their bodies when no one is close by.</p>
+			<p class="text">Some people with schizophrenia neglect basic hygiene and may need help with everyday living activities. Many a time, family members do not realize that this is the result of the illness, and perceive the patients as lazy and not willing to better their lives.</p>
+			<p class="text">Here are some more pointers�<br>
+				<ul class="text">
+				<li>Diminished ability to initiate and sustain planned activity</li>
+				<li>Sleeping excessively or inability to sleep </li>
+				<li>Peculiar use of words or odd language structure </li>
+				<li>Excessive writing without meaning </li>
+				<li>Being reclusive and secretive</li>
+				<li>Extreme reactions to criticism</li>
+				<li>Unexpected hostility </li>
+				<li>Extreme preoccupation with philosophical/spiritual/religious matters </li>
+				<li>Talking/smiling/laughing to himself/herself </li>
+				<li>Assuming odd postures </li>
+				<li>Refusal to touch persons or objects / Extremely sensitive to being touched by others</li>
+				<li>Wearing gloves/sunglasses for no apparent reason </li>
+				</ul>
+			</p>
+			<p class="text"><strong>Are people with schizophrenia violent?</strong><br>People with schizophrenia are not especially prone to violence and often prefer to be left alone. Studies show that if people have no record of criminal violence before they develop schizophrenia and do not abuse psychoactive substances, they are unlikely to commit crimes after they become ill. Most violent crimes are not committed by people with schizophrenia, and most people with schizophrenia do not commit violent crimes. If someone with schizophrenia becomes violent, their violence is most often directed at family members and tends to take place at home.</p>
+			<p class="text"><strong>Treatment</strong><br><strong>Medicines are the cornerstones of treatment for schizophrenia</strong>, just as they are the most important treatment for other medical illnesses. Depending on the severity of the symptoms and the stage of the illness, some individuals with schizophrenia may have to be treated in the hospital, especially if acutely ill. Others can be treated as out-patients, with regular visits to the doctor. </p>
+			<p class="text">The medicines used to treat schizophrenia are called <strong>anti-psychotics</strong>, and are usually given in either tablet or capsule form. People who are experiencing an acute attack of schizophrenia are often given injections, which act more rapidly than oral medications.</p>
+			<p class="text">Length of treatment. Like diabetes or high blood pressure, schizophrenia is a chronic disorder, and most patients need to take some type of medication for the rest of their lives. Staying on medication is essential to prevent relapses. <strong>Anti-psychotic medication should not be discontinued without consulting a doctor, and it should always be tapered off under a doctor's supervision rather than being stopped all at once</strong>.</p>
+			<p class="text"><strong>Refusal to take medication</strong><br>This is a frustrating - but fairly common - problem. It may be hard to understand why someone with schizophrenia would refuse to take medication when the necessity of doing so is obvious to everyone else. The usual reason is that a person with schizophrenia lacks insight into the illness i.e. he/she does not believe that he/she is ill; so, he/she sees no reason to take medication. </p>
+			<p class="text">There are a few strategies that can be tried to ensure that people with schizophrenia receive the medicines they need. Some medications are available in long-acting, injectable forms that eliminate the need to take pills every day. Some others are available as colorless, tasteless, odorless liquids.  Family members, without the patient�s knowledge, can mix these in his/her food. </p>
+			<p class="text"><strong>What is the role of the patient's family?</strong><br>There are many situations in which a person with schizophrenia will need help from his/her family.</p>
+				<ol class="text">
+				<li>People with schizophrenia often resist treatment, believing that their delusions or hallucinations are real and that psychiatric help is not required. If a crisis occurs, family and friends may need to seek help on behalf of the patient.</li>
+				<li>Patients who are not willing for treatment may hide their strange behavior or ideas from the psychiatrist, so family members and friends are a valuable source of information. If necessary, they should speak privately with the doctor prior to the patient being examined, and provide an account of the patient�s behavior. </li>
+				<li>Ensuring that people with schizophrenia continue to get treatment and take their medication after they leave the hospital is also important. If patients stop taking their medication or stop going for follow-up appointments, their symptoms will return. </li>
+			</p>
+			<p class="text">How should you respond when someone with schizophrenia makes statements that are strange or clearly false? Since these bizarre beliefs or hallucinations are very real to the patient, it will not be useful to say they are wrong or imaginary. Going along with the delusions will not be helpful, either. It is best to calmly say that you see things differently than the patient does, but acknowledge that everyone has the right to see things in their own way. Being respectful, supportive, and kind without tolerating dangerous or inappropriate behavior is the most helpful way to approach people with this disorder.</p>
+ 		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

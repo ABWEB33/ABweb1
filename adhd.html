@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+
+
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+        	<div class="glossymenu" >
+			<a class="menuitem" href="">Home</a>
+			<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+			<div class="submenu">
+				<ul>
+				<li><a href="relax.html">Relaxation Training</a></li>
+				<li><a href="sleep.html">Sleep Well</a></li>
+				<li><a href="stress.html">Stress</a></li>
+				<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+				<div class="submenu">
+					<ul>
+						<li><a href="discipline.html">Discipline</a></li>
+						<li><a href="negative.html">Negative Peer Pressure</a></li>
+						<li><a href="sibling.html">Sibling Rivalry</a></li>
+						<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+						<li><a href="watchtv.html">Watching TV</a></li>
+						<li><a href="cttg.html">Children Touching their Genitals</a></li>
+					</ul>
+				</div></div>
+				</ul>
+			</div>
+			<a class="menuitem submenuheader" href="#">Illness</a>
+			<div class="submenu">
+				<ul>
+				<li><a href="addiction.html">Addiction</a></li>
+				<li><a href="adhd.html">ADHD</a></li>
+				<li><a href="bipolar.html">Bipolar Disorder</a></li>
+				<li><a href="depression.html">Depression</a></li>
+				<li><a href="ocd.html">OCD</a></li>
+				<li><a href="faq.html">Psychiatry FAQ's</a></li>
+				<li><a href="schizophrenia.html">Schizophrenia</a></li>
+				</ul>
+			</div>
+			<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+			</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/adhd.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td><p class="text">What is it like to have Attention Deficit Hyperactivity Disorder (ADHD)? What is the �feel� of the illness? What is the subjective experience of ADHD children, and what is it like to live with? </p>
+			<p class="text">Many metaphors come to mind to describe the disease. It's like driving in the rain with bad windshield wipers. Everything is fingers, tapping your feet, humming a song, whistling, looking here, looking there, scratching, stretching � all the time�and people think you're not paying attention or that you're not interested. </p>
+			<p class="text">ADHD is a fairly common illness - data suggest that 5% of children have the problem. Boys are twice as likely as girls to be diagnosed with ADHD. ADHD is probably under-diagnosed in girls, since their symptoms tend to be less dramatic than those in boys and thus draw less attention from parents and teachers. While it is true that any child may show distractibility, impulsivity or restlessness at times, the child with ADHD manifests these behaviors more frequently and severely than other children of the same age or developmental level. </p>
+			<p class="text">There are three subtypes of ADHD: the <strong>predominantly hyperactive type </strong>(that does not show significant inattention), the <strong>predominantly inattentive type </strong>(that does not show significant hyperactive-impulsive behavior) and the <strong>combined type </strong>(that displays both inattentive and hyperactive-impulsive symptoms).</p>
+			<p class="text"><strong>What causes ADHD?</strong><br>One of the first questions a parent will have is "Why? What went wrong? Did I do something to cause this?" There is no evidence to suggest that ADHD is the result of social factors or child-rearing methods. Most substantiated causes appear to fall in the realm of genetics and neurobiology. This is not to say that environmental factors may not influence the severity of the disorder, and especially the degree of impairment and suffering the child may experience, but that such factors do not seem to give rise to the condition by themselves.</p>
+			<p class="text">ADHD often runs in families, so there are likely to be genetic influences. Studies indicate that 25 percent of the close relatives in the families of ADHD children also have ADHD, whereas the rate is about 5 percent in the general population. Many studies of twins now show that a strong genetic influence exists in the disorder.</p>
+			<p class="text">There is increasing evidence that variants in the gene for the dopamine transporter are related to the development of ADHD. People with ADHD usually have relatively high dopamine transporter levels, which clears dopamine from the synapse (the space between two neurons) before dopamine manifests its full effect. Methylphenidate, a medicine used to treat ADHD, blocks the action of the dopamine transporter, allowing the brain to enhance the effect of the available dopamine. Currently this is the most widely accepted model of ADHD etiology in the medical community.</p>
+			<p class="text"><strong>Recognizing the illness...</strong><br>The principal characteristics of ADHD are <strong>inattention, hyperactivity,</strong> and <strong>impulsivity</strong>. Because many normal children may have these symptoms, but at a low level, or the symptoms may be caused by another disorder, it is important that the child receive a thorough examination by a professional, before a diagnosis is made. </p>
+			<p class="text">In many cases, it is a teacher who initiates the process of seeking psychiatric help by informing parents that their child is daydreaming in class, failing to complete assignments or driving everyone crazy with thoughtless behavior. If eight or more of the following statements accurately describe your child, particularly before age 7, there may be reason to suspect ADHD:
+				<ul class="text">
+				<li>Often fidgets or squirms in seat </li>
+				<li>Has difficulty remaining seated </li>
+				<li>Is easily distracted </li>
+				<li>Has difficulty awaiting turn in groups</li>
+				<li>Often blurts out answers to questions </li>
+				<li>Has difficulty following instructions</li>
+				<li>Has difficulty sustaining attention to tasks</li>
+				<li>Often shifts from one uncompleted activity to another </li>
+				<li>Has difficulty playing quietly</li>
+				<li>Often talks excessively</li>
+				<li>Often interrupts or intrudes on others </li>
+				<li>Often does not seem to listen </li>
+				<li>Often loses things necessary for tasks </li>
+				<li>Often engages in physically dangerous activities, without considering consequences</li>
+				</ul>
+			</p>
+			<p class="text"><strong>Learning Disability</strong><br>Many children with ADHD - approximately 25% - also have a specific learning disability (LD; also known as dyslexia). In school age children, this presents as difficulties in reading, writing, spelling or arithmetic.</p>
+			<p class="text"><strong>Does ADHD need treatment?</strong><br>There is no question that ADHD can, and does, disrupt lives. The parents of ADHD children may be ostracized by neighbors and relatives, who blame them for failing to control the child. "I've got criticism of my parenting skills from strangers," the mother of a hyperactive boy told me. "When you're out in public, you're always on guard. Whenever I'd hear a child cry, I'd turn to see if it was because of A****h". School can be a shattering experience for such kids. Frequently reprimanded and tuned out, they lose any sense of self-worth and fall ever further behind in their work. ADHD kids are also prone to accidents, because of their poor impulse-control. The psychological injuries are often greater. By age ten, a third are hostile and defiant. By age fourteen, they run the risk of developing another psychiatric illness, Conduct Disorder. With timely and adequate treatment, such undesirable outcomes can be prevented.</p>
+			<p class="text"><strong>Treatment</strong><br>While there is a lot that parents and teachers can do, it is important to remember that medicines are central to the treatment of ADHD. About 70% of ADHD children respond to medicines. The first-line medications used to treat ADHD include <strong>atomoxetine</strong> and <strong>methylphenidate</strong>. Atomoxetine works on the neurotransmitter norepinephrine, whereas methylphenidate works on the neurotransmitter dopamine. Both of theses neurotransmitters are believed to play a role in ADHD. </p>
+			<p class="text">Some children get better results from one medication, some from another. It is important to work with your doctor to find the right medication and the right dosage. For many children, the medicines dramatically reduce their hyperactivity and impulsivity and improve their ability to focus, work and learn. The medications may also improve physical coordination, such as that needed in handwriting and in sports. These drugs, when used under medical supervision, are quite safe.</p>
+			<p class="text"><strong>A word of caution</strong> regarding alternative therapies, which tend to play down the medical basis of the illness and to focus excessively on dietary modification / parenting styles: Bear in mind that the term "alternative" often means unscientific because there is little or no credible research to support these suggested interventions. If there were, they would be called scientifically based interventions, not alternative ones.</p>
+			<p class="text"><strong>What parents SHOULD do:</strong><br>Children with ADHD may need help in organizing. Therefore:
+				<ul class="text">
+				<li><strong>Schedule.</strong> Have the same routine every day, from wake-up time to bedtime. The schedule should include homework time and playtime (including outdoor recreation and indoor activities such as computer games). Have the schedule written down and displayed in a spot where everyone in the family can see it. If a schedule change must be made, make it as far in advance as possible. </li>
+				<li><strong>Organize needed everyday items.</strong> Have a place for everything and keep everything in its place. This includes clothing, books and school supplies.</li>
+				<li><strong>Use homework and notebook organizers.</strong> Stress the importance of writing down school assignments and bringing home needed books.</li>
+				</ul>
+			</p>
+			<p class="text">Children with ADHD need consistent rules that they can understand and follow. If rules are followed, give small rewards. Look for good behavior and praise it.</p>
+			<p class="text"><strong>What parents SHOULD NOT do:</strong><br>
+				<ul class="text">
+				<li>Blame yourself: ADHD is not caused by poor parenting, family problems, poor teachers/schools </li>
+				<li>Avoid milk, sugar, soft drinks and chocolates. These is no credible scientific evidence which links these with ADHD </li>
+				<li>Provide zinc and multivitamin supplements as ADHD "cures": again, no reputable research supports their use </li>
+				</ul>
+			</p>
+			<p class="text"><strong>What the school / teachers CAN do:</strong><br>Within the classroom, some simple, practical things work well. Let hyperactive kids move around. Give them stand-up desks, for instance. To minimize distractions, ADHD children should sit close to the teacher and be permitted to take exams in a quiet area.</p>
+		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

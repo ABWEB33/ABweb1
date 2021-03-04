@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+        	<div class="glossymenu" >
+			<a class="menuitem" href="">Home</a>
+			<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+			<div class="submenu">
+				<ul>
+				<li><a href="relax.html">Relaxation Training</a></li>
+				<li><a href="sleep.html">Sleep Well</a></li>
+				<li><a href="stress.html">Stress</a></li>
+				<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+				<div class="submenu">
+					<ul>
+						<li><a href="discipline.html">Discipline</a></li>
+						<li><a href="negative.html">Negative Peer Pressure</a></li>
+						<li><a href="sibling.html">Sibling Rivalry</a></li>
+						<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+						<li><a href="watchtv.html">Watching TV</a></li>
+						<li><a href="cttg.html">Children Touching their Genitals</a></li>
+					</ul>
+				</div></div>
+				</ul>
+			</div>
+			<a class="menuitem submenuheader" href="#">Illness</a>
+			<div class="submenu">
+				<ul>
+				<li><a href="addiction.html">Addiction</a></li>
+				<li><a href="adhd.html">ADHD</a></li>
+				<li><a href="bipolar.html">Bipolar Disorder</a></li>
+				<li><a href="depression.html">Depression</a></li>
+				<li><a href="ocd.html">OCD</a></li>
+				<li><a href="faq.html">Psychiatry FAQ's</a></li>
+				<li><a href="schizophrenia.html">Schizophrenia</a></li>
+				</ul>
+			</div>
+			<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+			</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/faq.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td><p class="text">In the past, the subjects of psychiatry and mental illness were surrounded by mystery and fear. Today, we have made tremendous progress in our understanding of mental illnesses and in our ability to offer effective treatments. However, questions about mental illness often go unanswered and stand in the way of people receiving help.</p>
+			<p class="text"><strong>What is mental illness?</strong><br>Mental illness is a brain disorder (and not merely a �mind� disorder). It usually impacts on the way a person thinks, feels, behaves and interacts with other people. It is a common illness: each year, one in five adults is diagnosed with a mental illness. The term "mental illness" actually encompasses numerous psychiatric disorders, and just like illnesses that affect other parts of the body, they can vary in severity. As the term �mental illness� has acquired a pejorative connotation for many people, it is better to use the term �psychiatric illness/disorder� </p>
+			<p class="text"><strong>Who is a psychiatrist?</strong><br>A psychiatrist is a medical doctor who specializes in the diagnosis, treatment and prevention of mental (psychiatric) illnesses. Psychiatric care involves a comprehensive evaluation of emotional and physical health and the formulation/implementation of an individualized treatment plan, which may include medication, psychotherapy (�talk therapy�) or other modalities. Psychiatrists help patients to understand the illness and to learn what they can do to resolve life problems that contribute to the illness. This may involve issues on the job, in school or within the family and community.</p>
+			<p class="text"><strong>Only mad people go to a psychiatrist, right? </strong><br>Wrong. People seek psychiatric help for many reasons. Life's usual round of trials may become overwhelming. Relationships may become troubled, or the pangs of anxiety - easily dismissed earlier as simple "nerves" - may grow sharper and last longer. The emotions that arise in reaction to everyday stresses and strains may blow badly out of proportion, or may be strangely absent. Eating may become a refuge, and sleep may begin to seem either irresistible or elusive. Alcohol or drug use may get out of control. The list of problems is long: a panic attack; frightening hallucinations; "voices" that whisper intrusive and incomprehensible things; a pall of gloom that never seems to lift, causing everyday life to feel distorted, out of control, not worth living. </p>
+			<p class="text">Many of the people with the problems described above may not look as though they are ill or that something is wrong. <strong>Most of them are not �mad people�</strong> � in any sense of the term. However, all of them will benefit from psychiatric help. </p>
+			<p class="text"><strong>What are the warning signs of psychiatric illness?</strong><br>A person with one or more of the following symptoms should be evaluated by a psychiatrist as soon as possible:
+				<ul class="text">
+				<li>Marked personality change</li>
+				<li>Inability to cope with problems and daily activities </li>
+				<li>Strange ideas </li>
+				<li>Excessive worries </li>
+				<li>Prolonged depression and apathy </li>
+				<li>Marked changes in eating or sleeping patterns</li>
+				<li>Extreme highs and lows</li>
+				<li>Abuse of alcohol or drugs </li>
+				<li>Excessive anger, hostility or violent behavior </li>
+				</ul>
+			A person who is <strong>thinking or talking about suicide or homicide</strong> should seek help immediately.
+			</p>
+			<p class="text"><strong>Mental illness is all in the mind. If the person tries hard enough, he can overcome these problems on his own. Why does he need medicines?</strong><br>The term "mental illness" is an unfortunate one because it implies a distinction between "mental" (mind-based) disorders and "physical" (body-based) disorders. Research shows that there is much that is "physical" in "mental" disorders and vice-versa. For example, the brain chemistry of a person with the psychiatric illness of depression is different from that of a normal person, and treatment with medicines brings the brain chemistry back to normal. </p>
+			<p class="text">It might seem surprising, but the thoughts, feelings and behavior of normal � yes, normal � people are determined by the actions of certain brain chemicals. This is an established fact of neuroscience. The range of emotions a person experiences in various situations, and the differences in nature and temperament between one person and another, are ultimately determined by minute variations in the levels of these chemicals.</p>
+			<p class="text">It is a myth that mental illness is a weakness or defect in character and that sufferers can get better simply by "pulling themselves up by their bootstraps" Mental illnesses are real illnesses - as real as heart disease and cancer - and they require, and respond well to, medical treatment.</p>
+			<p class="text"><strong>I�ve heard that psychiatric medicines carry a lot of side effects�</strong><br>Psychiatric medications are like any other medicine your doctor would prescribe: they have beneficial and unwanted (�side�) effects. Antibiotics, which cure potentially serious bacterial infections, can cause nausea. Heart disease medication can cause low blood pressure. Even over-the-counter drugs such as cold remedies can cause drowsiness, while paracetamol can cause stomach problems. </p>
+			<p class="text">One of the more surprising aspects of medications is how two people taking the same medicine can have such different experiences. One person may have troublesome side effects, while another person finds that the medicine does only the good that it is intended to do. The important thing to remember is this: <strong>side effects are possibilities, not certainties</strong>. There is no compulsion that a patient must get all, some, or even one of the side effects listed for a drug.  Excessive fear about side effects is counter-productive.</p>
+			<p class="text">There is another issue as well: side effects may be serious and life threatening, or merely annoying. While psychiatric medicines do carry the possibility of inconveniencing side effects, <strong>most of them are entirely devoid of serious side effects at prescribed doses</strong>. Also, it is important to remember that while beneficial effects tend to get enhanced over time, most side effects tend to diminish over time � in fact, some side effects go away altogether with time. All these considerations require doctors to assess the risk of side effects versus the expected benefit of any medication. In a life-threatening disease, even serious side effects may be worth the risk - psychiatrists are trained to make this risk/benefit analysis. </p>
+			<p class="text"><strong>How long should the patient take medicines?</strong><br>How long someone must take psychiatric medication depends on the individual and the disorder. Many depressed and anxious people may need medication for a single period - perhaps for several months - and then never need it again. People with conditions such as schizophrenia or bipolar disorder (also known as manic-depressive illness), or those whose depression or anxiety is chronic or recurrent, <strong>may have to take medication indefinitely</strong>.</p>
+			<p class="text"><strong>Is psychiatric medication addictive?</strong><br>What does the word addiction mean? It means an inability to stop using a chemical that the body does not need, in spite of the adverse consequences of continued use. Note two important components in the preceding definition: 1. The body does not need the chemical, and 2. The chemical causes bodily harm. Examples of such chemicals include ethanol (alcohol), cannabis (marijuana) and opioids (brown sugar)</p>
+			<p class="text">Now, let us consider diabetics, many of whom use tablets or insulin injections � as advised by their doctors - to keep the illness under control. Are they addicted to their medicines? No way! <strong>For one, their body needs the medicines to counter the illness. For another, not taking the medicines can cause bodily harm </strong>� not the other way around. The list of such medical disorders (and medicines) is long: high blood pressure (anti-hypertensives), high blood cholesterol (statins) and hypothyroidism (thyroid hormones) are some common examples. </p>
+			<p class="text">The same logic applies to psychiatric medicines: a person with schizophrenia, for example, needs the anti-psychotics to keep the illness in check � not taking them puts him at risk of suffering a relapse. In this context, there is no way the word addiction can be used with any justification. </p>
+ 		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

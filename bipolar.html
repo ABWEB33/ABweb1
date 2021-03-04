@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+
+
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+    	<div class="glossymenu" >
+		<a class="menuitem" href="">Home</a>
+		<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+		<div class="submenu">
+			<ul>
+			<li><a href="relax.html">Relaxation Training</a></li>
+			<li><a href="sleep.html">Sleep Well</a></li>
+			<li><a href="stress.html">Stress</a></li>
+			<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+			<div class="submenu">
+				<ul>
+					<li><a href="discipline.html">Discipline</a></li>
+					<li><a href="negative.html">Negative Peer Pressure</a></li>
+					<li><a href="sibling.html">Sibling Rivalry</a></li>
+					<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+					<li><a href="watchtv.html">Watching TV</a></li>
+					<li><a href="cttg.html">Children Touching their Genitals</a></li>
+				</ul>
+			</div></div>
+			</ul>
+		</div>
+		<a class="menuitem submenuheader" href="#">Illness</a>
+		<div class="submenu">
+			<ul>
+			<li><a href="addiction.html">Addiction</a></li>
+			<li><a href="adhd.html">ADHD</a></li>
+			<li><a href="bipolar.html">Bipolar Disorder</a></li>
+			<li><a href="depression.html">Depression</a></li>
+			<li><a href="ocd.html">OCD</a></li>
+			<li><a href="faq.html">Psychiatry FAQ's</a></li>
+			<li><a href="schizophrenia.html">Schizophrenia</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+		</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/bipolar.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td><p class="text">Bipolar disorder, also known as manic depression, is a brain disorder that causes unusual shifts in a person�s mood, energy and ability to function. The symptoms of bipolar disorder can result in damaged relationships, difficulty in working or going to school and even suicide. There are generally periods of normal mood as well, but, left untreated, people with bipolar disorder continue to experience these shifts in mood. Approximately 1% of the adult population suffers from bipolar disorder. Like diabetes or heart disease, bipolar disorder is a long-term illness that must be carefully managed throughout a person's life.</p>
+			<p class="text"><strong>What causes bipolar disorder?</strong><br>Bipolar disorder can run in families, so there is a high likelihood that genes contribute to the illness. In fact, more than 75% of individuals with bipolar disorder have a relative with either depression or bipolar disorder, a rate that is several times higher than that found in the general population. It is also possible that people may inherit a tendency to develop the illness, which can then be triggered by environmental factors such as distressing life events.</p>
+			<p class="text">Other factors theorized to be involved in causing of the illness include too much secretion of cortisol (a stress hormone) and a super-fast �biologic clock� (a tiny cluster of nerves called the supra-chiasmatic nucleus) </p>
+			<p class="text"><strong>Recognizing the illness�</strong><br>Bipolar disorder can cause dramatic mood swings�from high and feeling on top of the world, or uncomfortably irritable and �revved up�, to sad and hopeless, often with periods of normal moods in between. The periods of highs and lows are called episodes of mania and depression.</p>
+			<p class="text"><strong>MANIA PHASE</strong><br><i>�The fast ideas become too fast and there are far too many�overwhelming confusion replaces clarity�you stop keeping up with it - memory goes. Infectious humor ceases to amuse. Your friends become frightened� everything is now against the grain�you are irritable, angry, frightened, uncontrollable and trapped�</i></p>
+			<p class="text">Symptoms during the manic phase are as follows:
+				<ul class="text">
+				<li><i>Feeling on top of the world</i>. A sensation of sheer and utter happiness that nothing - not even bad news or a horrifying event or tragedy - can change.</li>
+				<li><i>Sudden or extreme irritability/ rage. </i></li>
+				<li><i>Unrealistic beliefs in one�s ability and powers</i>. A person may experience feelings of exaggerated confidence or unwarranted optimism. This can lead to over-ambitious work plans and the belief that nothing can stop him or her from accomplishing any task. </li>
+				<li><i>Grandiose delusions</i>. Individuals imagine that they have special connections with God, celebrities or political leaders.</li>
+				<li><i>Hyperactivity</i>. Scheduling more events in a day than can be accomplished; inability to relax or sit still.</li>
+				<li><i>Excessively risky behavior</i>. Reckless driving, outlandish spending sprees, foolish business investments or out-of-character sexual behavior.</li>
+				<li><i>Uncontrollable racing thoughts / rapid speech</i>. Ideas that abruptly change from topic to topic, expressed in loud, rapid speech that becomes increasingly incoherent.</li>
+				<li><i>Decreased need for sleep</i>. An individual may go for days with little or no sleep, without feeling tired.</li>
+				<li><i>Denial that anything is wrong</i></li>
+				</ul>
+			</p>
+			<p class="text"><strong>DEPRESSION PHASE</strong><br><i>�I doubt completely my ability to do anything well. It seems as though my mind has slowed down and burned out to the point of being virtually useless�[I am] haunt[ed]�with the total, the desperate hopelessness of it all�Others say "It's only temporary, it will pass, you will get over it" but of course they haven't any idea of how I feel, although they are certain they do. If I can't feel, move, think or care, then what on earth is the point?�</i></p>
+			<p class="text">Symptoms during the depressed phase are as follows:
+				<ul class="text">
+				<li><i>Intense sadness or despair</i>. The person feels helpless, hopeless, and worthless.</li>
+				<li><i>No interest in activities they once enjoyed. </i></li>
+				<li><i>Loss of energy, fatigue.</i></li>
+				<li><i>Sleep difficulties</i>. Either sleeping too much or not at all.</li>
+				<li><i>Changes in appetite</i>. Either a noticeable increase in appetite or a substantial weight loss unrelated to dieting.</li>
+				<li><i>Difficulty concentrating, remembering, making decisions.</i></li>
+				<li><i>Thoughts of death or suicide.</i>.</li>
+				</ul>
+				<br>In some people, symptoms of mania and depression may occur together in what is called a <strong>mixed state</strong>.
+			</p>
+			<p class="text"><strong>Course of the illness</strong><br>Episodes of mania and depression typically recur across the life span. However, maintenance medication (medicines used to prevent further episodes) substantially reduces the risk of recurrence in treated patients. Between episodes, most people with bipolar disorder are free of symptoms. When four or more episodes of illness occur within a 12-month period, a person is said to have <strong>rapid-cycling</strong> bipolar disorder. Rapid cycling tends to develop later in the course of the illness and is more common among women than among men. Proper treatment helps reduce the frequency and severity of episodes and enables patients with bipolar disorder lead healthy and productive lives</p>
+			<p class="text"><strong>Treatment</strong><br>Most people with bipolar disorder - even those with the most severe forms - can achieve substantial stabilization of their mood swings and related symptoms with proper treatment. Because the illness is recurrent, long-term preventive treatment (maintenance medication) is almost always indicated. Every individual is unique and no two patients with bipolar disorder are the same, so a thorough psychiatric assessment is mandatory.</p>
+			<p class="text"><strong>Medicines are the primary � in many patients, the sole � treatment modality</strong>. Medication for bipolar disorder depends on the phase of the illness a patient is in: antidepressants for the depression phase, a combination of mood stabilizers and antipsychotics for the mania phase and mood stabilizers alone during the maintenance phase. Finding the ideal set of medicines for a given patient takes time; patience and persistence are essential. </p>
+			<p class="text">Like many psychiatric illnesses, bipolar disorder can disrupt a person�s life and relationships with others - particularly with family members. Thus, some people undergoing treatment for bipolar disorder may need psychotherapy, in which the individual and the psychiatrist work out the problems and re-establish relationships damaged by the illness.</p>
+			<p class="text">In most cases, bipolar disorder is much better controlled if treatment is continuous than if it is on and off. But even when there are no breaks in treatment, mood changes can occur and should be reported immediately to the psychiatrist. The doctor may be able to prevent a full-blown episode by making adjustments to the treatment plan. Working closely with the doctor and communicating openly about treatment concerns are vital for effective treatment.</p>
+			<p class="text">Keeping a chart of daily moods, symptoms, sleep pattern and life events may help you and your psychiatrist to better understand the illness, and enable the doctor track and treat the illness more effectively.</p>
+		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

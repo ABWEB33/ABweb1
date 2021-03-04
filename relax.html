@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Consulting Psychiatrist</title>
+<META name="description" content="mental illness, psychiatrist">
+
+<META name="keywords" content="mental illness, psychiatrist">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #666600;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style>
+<link href="./templates/common/images/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./menu/jquery-1.2.2.pack.js"></script>
+	<script type="text/javascript" src="./menu/ddaccordion.js"></script>
+	<script type="text/javascript">
+	ddaccordion.init({
+		headerclass: "submenuheader", //Shared CSS class name of headers group
+		contentclass: "submenu", //Shared CSS class name of contents group
+		collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+		defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+		animatedefault: false, //Should contents open by default be animated into view?
+		persiststate: true, //persist state of opened contents within browser session?
+		toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+		togglehtml: ["suffix", "<img src='./menu/plus.gif' class='statusicon' />", "<img src='./menu/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+		animatespeed: "normal" //speed of animation: "fast", "normal", or "slow"
+	})
+
+	</script>
+
+	<style type="text/css">
+
+	.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 194px; /*width of menu*/
+	border: 1px solid #9A9A9A;
+	border-bottom-width: 0;
+	}
+
+	.glossymenu a.menuitem{
+	background: #6093E7 url(./menu/glossyback.gif) repeat-x bottom left;
+	font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	}
+
+
+	.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+	}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	}
+
+	.glossymenu a.menuitem:hover{
+	background-image: url(glossyback2.gif);
+	}
+
+	.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+	}
+
+	.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.glossymenu div.submenu ul li{
+	border-bottom: 1px solid blue;
+	}
+
+	.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 2px 0;
+	padding-left: 10px;
+	}
+
+	.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+	}
+
+	</style>
+</head>
+<body onload="runSlideShow()">
+<div align="center">
+<!-- END OF TOP STRIP--->
+
+  <table width="784" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="17" background="./templates/common/images/left_shad.jpg">&nbsp;</td>
+      <td>
+      	  <table width="750" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="150" background="./templates/common/images/top_bar.jpg" valign="bottom"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+//
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 5000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = './templates/common/banners/001.gif'
+Pic[1] = './templates/common/banners/002.gif'
+Pic[2] = './templates/common/banners/003.gif'
+Pic[3] = './templates/common/banners/004.gif'
+Pic[4] = './templates/common/banners/005.gif'
+Pic[5] = './templates/common/banners/006.gif'
+Pic[6] = './templates/common/banners/007.gif'
+Pic[7] = './templates/common/banners/008.gif'
+Pic[8] = './templates/common/banners/009.gif'
+Pic[9] = './templates/common/banners/010.gif'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<img src="./templates/common/banners/001.gif" name="SlideShow" id="VU"></td>
+          </tr>
+          <tr>
+            <td height="30" valign="middle" background="./templates/common/images/top_bar.jpg">
+           <table width="97%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="90%" align="center" valign="middle"><font style='font-size:8pt;' face='MS Sans Serif,tahoma,verdana,arial' color='#003366'>
+	<MARQUEE WIDTH="100%" DIRECTION="left" BEHAVIOR="scroll"  truespeed="1" scrolldelay="25" scrollamount="1" onMouseOut=this.start()  onMouseOver=this.stop()>
+	<img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>Clinic:</b>  14, Sambasivam Street, Thyagaraya Nagar, Chennai - 600017, India&nbsp;&nbsp;&nbsp;
+	<img src="./templates/common/images/diamond.gif"><img src="./templates/common/images/diamond.gif">&nbsp;&nbsp;&nbsp;<b>For appointments, call:</b>&nbsp;&nbsp;&nbsp;  +91-44-28156070 / 28156405, +91-9884790294&nbsp;&nbsp;&nbsp;<img src="./templates/common/images/diamond.gif"></MARQUEE>
+	</font>
+ </td>
+</tr>
+</table>	          </td>
+          </tr>
+          <tr>
+            <td align="left">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="200" valign="top" background="./templates/common/images/sidebg.jpg">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="170" valign="top" >
+            	<div class="glossymenu" >
+				<a class="menuitem" href="">Home</a>
+				<a class="menuitem submenuheader" class="menuitem" href="#" >Health</a>
+				<div class="submenu">
+					<ul>
+					<li><a href="relax.html">Relaxation Training</a></li>
+					<li><a href="sleep.html">Sleep Well</a></li>
+					<li><a href="stress.html">Stress</a></li>
+					<div class="glossymenu"><a class="menuitem submenuheader" href="#" ><b>Parenting</b></a>
+					<div class="submenu">
+						<ul>
+							<li><a href="discipline.html">Discipline</a></li>
+							<li><a href="negative.html">Negative Peer Pressure</a></li>
+							<li><a href="sibling.html">Sibling Rivalry</a></li>
+							<li><a href="ttchild.html">Toilet Training Your Child</a></li>
+							<li><a href="watchtv.html">Watching TV</a></li>
+							<li><a href="cttg.html">Children Touching their Genitals</a></li>
+						</ul>
+					</div></div>
+					</ul>
+				</div>
+				<a class="menuitem submenuheader" href="#">Illness</a>
+				<div class="submenu">
+					<ul>
+					<li><a href="addiction.html">Addiction</a></li>
+					<li><a href="adhd.html">ADHD</a></li>
+					<li><a href="bipolar.html">Bipolar Disorder</a></li>
+					<li><a href="depression.html">Depression</a></li>
+					<li><a href="ocd.html">OCD</a></li>
+					<li><a href="faq.html">Psychiatry FAQ's</a></li>
+					<li><a href="schizophrenia.html">Schizophrenia</a></li>
+					</ul>
+				</div>
+				<a class="menuitem" href="about.html" style="border-bottom-width: 0">About</a>
+				</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2"><br><div align="center"><span class="text"><b>Consult Online</b></span><br>
+	<br><a href='http://www.kasamba.com/Professional/ViewExpert.aspx?cp5SRmKaHCk4jm0lO4uF37cX4u1zTUMwBWIaaSQ5tQmyYIMP1MtddHbSXyweuGUowJCIp5iUKmx7B4j_x002F_1russnBXzoy5vbwr'><img src='http://www.kasamba.com/VirtualPages/onlineexp.aspx?_x0039_GVnAqgjSB_x002B_QDTk7aKNZrvACrcjuVKWJpFApZoNm8lEKche6L_x002B_OrQQxMfiSAHcjmAVnQMic0E6EmDH3oVIAR_x002F_g_x003D__x003D_' border='0' align='absmiddle' alt='Ask an Expert - Visit my Virtual Office at Kasamba'></a>
+    </div></td>
+  </tr>
+</table>
+</td>
+	<td width="17" valign="top"  bgcolor="#FFFFFF" background="./templates/common/images/right_shad.jpg"></td>
+	<!-- Middle Portion Starts Here -->
+	  <td valign="top"  bgcolor="#FFFFFF"><br>
+	  <img src="./templates/common/images/relax.gif">
+	  <table width="500" border="0" cellspacing="0" cellpadding="10">
+		<tr>
+		  <td><p class="text">Many people find that learning to relax helps them reduce worry and anxiety. It can also help improve sleep and relieve physical symptoms caused by stress, such as headaches or stomach pains.<strong>Learning to relax is a skill and takes practice before it can be done properly.</strong></p>
+			<p class="text">Here is a guide on how to relax. This exercise should take about 15-20 minutes. However, if you have only 5 minutes to spare, 5 minutes is better than nothing.</p>
+			<p class="text"><strong>1. Find a quiet and relaxing place</strong><br>Choose a spot where you won't be disturbed. Lie down flat on your back, preferably on a firm mattress. Make sure you take the phone off the hook. You may need to explain to your family or friends what you are doing so that they do not disturb you. Telling them may also reduce any embarrassment you may feel.</p>
+			<p class="text"><strong>2. Clear your mind</strong><br>Try to clear your mind of all worries or disturbing thoughts. If these worries or thoughts drift back into your mind while you are relaxing, do not try to stop them, just let them float gently across and out of your mind without reacting to them. Let your mind be clear and calm.</p>
+			<p class="text"><strong>3. Practice the slow breathing method</strong><br>Breathe in for 3 seconds and breath out for 3 seconds, thinking the word relax every time you breathe out. Let your breathing flow smoothly. Imagine the tension flowing out of your body each time you breathe out.</p>
+			<p class="text">
+				<strong>4. Relax your muscles</strong><br>For each of the muscle groups in your body, tense the muscles for 7-10 seconds, then relax for 10 seconds. Tense your muscles moderately (not to the point of inducing pain). Don�t try to relax. Simply let go of the tension in your muscles and allow them to become relaxed. Relax your muscles in the following order:
+				<br><b><u><i>Hands</i></u></b> - clench one fist tightly, then relax. Do the same with the other hand.
+				<br><b><u><i>Lower arms</i></u></b> - bend your hand down at the wrist, as though you were trying to touch the underside of your arm, then relax.
+				<br><b><u><i>Upper arms</i></u></b> - bend your elbows and tense your arms. Feel the tension in your upper arm, then relax.
+				<br><b><u><i>Shoulders</i></u></b> - lift your shoulders up as if trying to touch your ears with them, then relax.
+				<br><b><u><i>Neck</i></u></b> - stretch your neck gently to the left, then forward, then to the right, then to the back in a slow rolling motion, then relax.
+				<br><b><u><i>Forehead and scalp</i></u></b> - raise your eyebrows, then relax.
+				<br><b><u><i>Eyes</i></u></b> - screw up your eyes, then relax.
+				<br><b><u><i>Jaw</i></u></b> - clench your teeth (just to tighten the muscles), then relax
+				<br><b><u><i>Tongue</i></u></b> - press your tongue against the roof of your mouth, then relax
+				<br><b><u><i>Chest</i></u></b> - breathe in deeply to inflate your lungs, then breath out and relax
+				<br><b><u><i>Stomach</i></u></b> - push your tummy in to tighten the muscle, then relax
+				<br><b><u><i>Upper back</i></u></b> - pull your shoulders forward with your arms at your side, then relax
+				<br><b><u><i>Lower back</i></u></b> - sit up and lean your head and upper back forward, rolling your back into a smooth arc thus tensing the lower back, then relax
+				<br><b><u><i>Buttocks</i></u></b> - tighten your buttocks, then relax
+				<br><b><u><i>Thighs</i></u></b> - while sitting up, push your heels firmly into the floor, then relax
+				<br><b><u><i>Calves</i></u></b> - bend your toes towards your shins, then relax
+				<br><b><u><i>Feet</i></u></b> - gently curl your toes down, then relax.
+			</p>
+			<p class="text"><strong>5. Enjoy the feeling of relaxation</strong><br>Take some slow breaths while you sit still for a few minutes enjoying the feeling of relaxation.<br><br><strong>Practice once or twice a day for at least eight weeks.</strong></p>
+		  </td>
+                  </tr>
+                  </table></td>
+                  <!-- Middle Portion Ends Here -->
+               </tr>
+	            </table>
+	        </td>
+          </tr>
+          <tr>
+            <td height="5" valign="middle" background="./templates/common/images/top_bar.jpg"></td>
+          </tr>
+        </table></td>
+      <td width="17" background="./templates/common/images/right_shad.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
